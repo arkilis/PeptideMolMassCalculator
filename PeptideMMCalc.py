@@ -93,6 +93,14 @@ def calculate_molar_mass(string):
 		
 	molar_mass = molar_mass - (number_of_acids-1)*h2o
 	return molar_mass
+	
+# check if char is a number
+def is_number(s):
+    try:
+        float(s)
+        return True
+    except ValueError:
+        return False
 
 # asks for user input
 def ask_for_acid():
